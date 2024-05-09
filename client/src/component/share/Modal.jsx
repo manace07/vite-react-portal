@@ -6,8 +6,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
     title: '',
     author: '',
     remarks: '',
-    createdby: '',
-    status: ''
+    approve_by: '',
   });
 
   // Handle change in text fields
@@ -20,24 +19,25 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
   };
 
   // Handle form submission
-  const handleSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-    if (typeof onSubmit === 'function') {
-      onSubmit(formData);
-      setFormData({ // Clear the form after submission
-        title: '',
-        author: '',
-        remarks: '',
-        createdby: '',
-        status: ''
+    try {
+      const response = await fetch('http://localhost:5000/tables', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    } else {
-      console.error('No onSubmit function provided!');
-    }
-    if (typeof onClose === 'function') {
-      onClose(); // Close the modal
-    } else {
-      console.error('No onClose function provided!');
+      if (response.ok) {
+        // Handle successful response
+        console.log('Form data submitted successfully');
+      } else {
+        // Handle error response
+        console.error('Error submitting form data');
+      }
+    } catch (error) {
+      console.error('Error submitting form data:', error);
     }
   };
 
@@ -78,15 +78,15 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
         />
         <TextField
           margin="dense"
-          label="Created By"
+          label="Approved By"
           type="text"
           fullWidth
           variant="outlined"
-          name="createdby"
-          value={formData.createdby}
+          name="approve_by"
+          value={formData.approve_by}
           onChange={handleInputChange}
         />
-        <TextField
+        {/* <TextField
           margin="dense"
           label="Status"
           type="text"
@@ -95,11 +95,11 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
           name="status"
           value={formData.status}
           onChange={handleInputChange}
-        />
+        /> */}
       </DialogContent>
       <DialogActions>
         <Button onClick={() => onClose && onClose()} color="primary">Cancel</Button>
-        <Button onClick={handleSubmit} color="primary">Submit</Button>
+        <Button onClick={handleFormSubmit} color="primary">Submit</Button>
       </DialogActions>
     </Dialog>
   );

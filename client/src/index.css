@@ -19,23 +19,14 @@
         width: 300px;
     }
     .form1{
-<<<<<<< HEAD
-        height: 400px;
-=======
         height: 550px;
->>>>>>> maxiarbn/main
         width: 400px;
         margin-left: 200px;
         background-color: #222020;
         border-radius: 10px;
     }
-<<<<<<< HEAD
-    .container{
-        width: 300px;
-=======
     #container{
         width:300px;
->>>>>>> maxiarbn/main
         height: 40px;
         margin-bottom: 10px;
         background-color: #222020;
@@ -90,11 +81,7 @@
     align-items: center;
 }
 .logo{
-<<<<<<< HEAD
-    height: 1050px !important;
-=======
     height: 250px;
->>>>>>> maxiarbn/main
     width: 250px;
 }
 .form1{
@@ -104,11 +91,7 @@
     background-color: #222020;
     border-radius: 10px;
 }
-<<<<<<< HEAD
-.container{
-=======
 #container{
->>>>>>> maxiarbn/main
     width: 250px;
     height: 40px;
     margin-bottom: 10px;
@@ -178,11 +161,7 @@
     background-color: #222020;
     border-radius: 10px;
 }
-<<<<<<< HEAD
-.container{
-=======
 #container{
->>>>>>> maxiarbn/main
     width: 250px;
     height: 40px;
     margin-bottom: 10px;
@@ -245,11 +224,7 @@
         width: 100%;
         border-radius: 10px;
     }
-<<<<<<< HEAD
-    .container{
-=======
     #container{
->>>>>>> maxiarbn/main
         width: 300px;
         margin-bottom: 10px;
         padding-bottom: 10px;
@@ -301,11 +276,7 @@
         border-radius: 10px;
         
     }
-<<<<<<< HEAD
-    .container{
-=======
     #container{
->>>>>>> maxiarbn/main
         width: 100%;
         margin: 5px 0 5px 0;
         padding-bottom: 5px;
@@ -350,11 +321,7 @@
         background: #1E2127;
     }
     .logo{
-<<<<<<< HEAD
-        height: 150px;
-=======
         height: 0px;
->>>>>>> maxiarbn/main
         width: 150px;
     } 
     .form1{
@@ -362,11 +329,7 @@
         width: 100%;
         border-radius: 10px;
     }
-<<<<<<< HEAD
-    .container{
-=======
     #container{
->>>>>>> maxiarbn/main
         width: 300px;
         margin-bottom: 10px;
         padding-bottom: 10px;
@@ -417,11 +380,7 @@
         border-radius: 10px;
         
     }
-<<<<<<< HEAD
-    .container{
-=======
     #container{
->>>>>>> maxiarbn/main
         width: 100%;
         margin: 5px 0 5px 0;
         padding-bottom: 5px;
@@ -484,11 +443,7 @@
 
 .logo{
     display: flex;
-<<<<<<< HEAD
-    color: #445a7e;
-=======
     color: #707E95;
->>>>>>> maxiarbn/main
     height: 3em;
     width: auto;
 
@@ -496,10 +451,6 @@
 
 .titlez{
     color: #707E95;
-<<<<<<< HEAD
-    margin: 0 0 0 20px;
-=======
->>>>>>> maxiarbn/main
     width: 100%;
 }
 
@@ -677,9 +628,6 @@
     overflow-x: auto; 
     overflow-y: auto; 
     max-height: 725px; 
-<<<<<<< HEAD
-   }
-=======
    }
 
 
@@ -691,4 +639,3 @@
     font-weight: bold;
     color: #000000;
 }
->>>>>>> maxiarbn/main
