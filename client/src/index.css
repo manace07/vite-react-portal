@@ -2,70 +2,631 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* XL DESKTOP */
+@media (min-width:1201px){
+    /* LOGIN PAGE */
+    .all{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo{
+        height: 300px;
+        width: 300px;
+    }
+    .form1{
+        height: 400px;
+        width: 400px;
+        margin-left: 200px;
+        background-color: #222020;
+        border-radius: 10px;
+    }
+    .container{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+        background-color: #222020;
+        border-top:#222020 ;
+        border-left:#222020 ;
+        border-right:#222020 ;
+        border-width: 2px;
+        margin-top:10px ;
+        color: white;
+    }
+    #text{
+        font-size: 30px;
+    }
+    .padlock{
+        height: 70px;
+        width: 70px;
+        color: white;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .backg1{
+        height: 1000px;
+        width: 1500px;
+        background-image:radial-gradient(closest-side, rgb(67,158,3, 1),rgb(0,0,0,0)); 
+        margin-left: 100px;
+        margin-top: -400px;
+        position: absolute;
+        overflow: hidden;
+    
+    }
+    .backg2{
+        height: 1000px;
+        width: 1500px;
+        margin-top: 200px;
+        margin-left: 100px !important;
+        background-image:radial-gradient(closest-side, rgb(4,107,225, 1),rgb(0,0,0,0));
+        position: absolute;
+        overflow: hidden;
+    }
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* DESKTOP */
+@media (min-width:1025px) and (max-width:1200px){
+ /* LOGIN PAGE */
+ .all{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
-a:hover {
-  color: #535bf2;
+.logo{
+    height: 1050px !important;
+    width: 250px;
+}
+.form1{
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    background-color: #222020;
+    border-radius: 10px;
+}
+.container{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #222020;
+    border-top:#222020 ;
+    border-left:#222020 ;
+    border-right:#222020 ;
+    border-width: 2px;
+    color: white;
+}
+#text{
+    font-size: 20px;
+}
+.padlock{
+    height: 50px;
+    width: 50px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.backg1{
+    height: 1000px;
+    width: 1500px;
+    background-image:radial-gradient(closest-side, rgb(67,158,3, 1),rgb(0,0,0,0)); 
+    margin-left: 0px;
+    margin-top: -400px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.backg2{
+    height: 1000px;
+    width: 1500px;
+    margin-top: 200px;
+    margin-left: 100px !important;
+    background-image:radial-gradient(closest-side, rgb(4,107,225, 1),rgb(0,0,0,0));
+    position: absolute;
+    overflow: hidden;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+.but{
+    width: 1000px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+/* SMALL SCREEN */
+@media (min-width:769px) and (max-width:1024px){
+     /* LOGIN PAGE */
+ .all{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
-button:hover {
-  border-color: #646cff;
+.logo{
+    height: 200px;
+    width: 200px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.form1{
+    height: 350px;
+    width: 350px;
+    margin-left: 15px;
+    background-color: #222020;
+    border-radius: 10px;
+}
+.container{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #222020;
+    border-top:#222020 ;
+    border-left:#222020 ;
+    border-right:#222020 ;
+    border-width: 2px;
+    color: white;
+}
+#text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.padlock{
+    height: 50px;
+    width: 50px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.backg1{
+    height: 1000px;
+    width: 1500px;
+    background-image:radial-gradient(closest-side, rgb(67,158,3, 1),rgb(0,0,0,0)); 
+    margin-left: 10px;
+    margin-top: -400px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.backg2{
+    height: 1000px;
+    width: 1500px;
+    margin-top: 200px;
+    margin-left: 100px !important;
+    background-image:radial-gradient(closest-side, rgb(4,107,225, 1),rgb(0,0,0,0));
+    position: absolute;
+    overflow: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* TABLET */
+@media (min-width:481px) and (max-width:768px){
+    /* LOGIN PAGE */
+    .all{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #707E95;
+    }
+    .logo{
+        height: 150px;
+        width: 150px;
+    } 
+    .form1{
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .container{
+        width: 300px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #707E95;
+        border-top:#707E95 ;
+        border-left:#707E95 ;
+        border-right:#707E95 ;
+        border-width: 2px;
+        color: white;
+    }
+    #text{
+        font-size: 11px;
+    }
+    .padlock{
+        display: none;
+    }
+    .backg1{
+        display: none;
+    }
+    .backg2{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (min-width:320px) and (max-width:480px){
+    /* LOGIN PAGE */
+    .all{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background: #1E2127;
+    }
+    .logo{
+        height: 150px;
+        width: 150px;
+    } 
+    .form1{
+        height: 0px;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .container{
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding-bottom: 5px;
+        background-color: #1E2127;
+        border-top:#1E2127 ;
+        border-left:#1E2127 ;
+        border-right:#1E2127 ;
+        border-width: 2px;
+        color: white;
+    }
+    #text{
+        font-size: 11px;
+    }
+    .padlock{
+        display: none;
+    }
+    .backg1{
+        display: none;
+    }
+    .backg2{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    button{
+        width: 100%;
+    }
+}
+}
+
+/* TABLET */
+@media (min-width:481px) and (max-width:768px){
+    /* LOGIN PAGE */
+    .all{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #1E2127;
+    }
+    .logo{
+        height: 150px;
+        width: 150px;
+    } 
+    .form1{
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .container{
+        width: 300px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #1E2127;
+        border-top:#707E95 ;
+        border-left:#707E95 ;
+        border-right:#707E95 ;
+        border-width: 2px;
+    }
+    #text{
+        font-size: 11px;
+    }
+    .padlock{
+        display: none;
+    }
+    .backg1{
+        display: none;
+    }
+    .backg2{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (min-width:320px) and (max-width:480px){
+    /* LOGIN PAGE */
+    .all{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background: #1E2127;
+    }
+    .logo{
+        height: 150px;
+        width: 150px;
+    } 
+    .form1{
+        height: 0px;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .container{
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding-bottom: 5px;
+        background-color: #1E2127;
+        border-top:#707E95 ;
+        border-left:#707E95 ;
+        border-right:#707E95 ;
+        border-width: 2px;
+        color: white;
+    }
+    #text{
+        font-size: 11px;
+    }
+    .padlock{
+        display: none;
+    }
+    .backg1{
+        display: none;
+    }
+    .backg2{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*DASHBOARD SECTION*/
+
+/*SIDE BAR*/
+
+
+.sidebar{
+    background-color: #232730;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin:0 0 40px 0;
+}
+
+
+
+.titles{
+    font-size: 30px;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.logo{
+    display: flex;
+    color: #445a7e;
+    height: 3em;
+    width: auto;
+
+}
+
+.titlez{
+    color: #707E95;
+    margin: 0 0 0 20px;
+    width: 100%;
+}
+
+.titles:hover{
+    z-index: 0;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s;
+    width: 8em;
+}
+
+
+
+
+
+
+
+/*HEADER*/
+
+.header{
+    font-weight: 600;
+    background-color: #1E2127;
+}
+
+
+/*DASHBOARD INFO*/
+
+/**Card**/
+
+.card-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+    
+
+}
+.card{
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s ease-in-out;
+    
+}  
+.card1{
+    flex: 1;
+    background: #439E03;
+    padding: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 20px;
+    
+}  
+
+.card2{
+    flex: 1;
+    background: #000000;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    padding-right: 20px;
+}  
+
+.card3{
+    flex: 1;
+    background: #046BE1;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    padding-right: 20px;
+}  
+
+
+.card:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+
+}
+
+.card--cover1{
+    background: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    border-radius: 50px;
+    color: #439E03;
+    margin-left: 200px;
+}
+.card--cover2{
+    background: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    border-radius: 50px;
+    color: #000000;
+    margin-left: 200px;
+}
+.card--cover3{
+    background: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    border-radius: 50px;
+    color:  #046BE1;
+    margin-left: 200px;
+}
+
+.card--title{
+    text-align: left;
+    font-size: 20px;
+    font-family: Inter;
+    color: #ededed;
+    font-weight: bold;
+}
+
+.numlog{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+.Title{
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top:50px;
+    color: #000000;
+
+}
+
+
+/****Table***/
+.MuiTableRow-root > * {
+    padding: 2px;
   }
-  a:hover {
-    color: #747bff;
+  
+  .MuiTableRow-root.MuiTableRow-head > * {
+    font-weight: bold !important;
+    background-color: #707E95;
+    font-size: medium;
+    font-family: Inter;
+    color: white;
+
   }
-  button {
-    background-color: #f9f9f9;
+  
+  .Table td,
+  th {
+    border: none !important;
+    
   }
-} */
+  
+  .Table:first-child {
+    border-radius: 0.7rem !important;
+  }
+  .status {
+    padding: 4px;
+    border-radius: 5px;
+  }
+  
+  .Details {
+    color: #00b5ff !important;
+    font-family: Inter;
+  }
+  
+
+  .TableContainer {
+    overflow-x: auto; 
+    overflow-y: auto; 
+    max-height: 725px; 
+   }

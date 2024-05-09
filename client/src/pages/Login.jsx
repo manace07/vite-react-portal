@@ -1,43 +1,47 @@
 import React from 'react';
 import { FaLock } from "react-icons/fa6";
+// import { Link } from 'react-router-dom';
+import Register from './Register';
 
 const Login = () => {
 return (
-<div className="flex justify-center w-screen h-screen items-center bg-stone-900">
-  <div className='col_1 flex flex-col justify-center items-center text-center text-3xl text-white'>
-    <div className='flex w-20 justify-center items-center'>
-      <img src="assets/images/usherlogo.png" alt="usher-logo" />
+<div className="all flex justify-center w-screen h-screen  bg-stone-900">
+  <div className='mb-10 col_1 flex flex-col justify-center items-center text-center text-3xl text-white'>
+    <div className='flex w-96 justify-center items-center'>
+      <img src="assets/images/usherlogo.png" alt="usher-logo" className='logo'/>
     </div>
-    <p>USHER TECHNOLOGIES INC.</p>
-    <p>“USHERing a safer world.”</p>
+    <p id='text'>USHER TECHNOLOGIES INC.</p>
+    <p id='text'>“USHERing a safer world.”</p>
   </div>
-  {/* <div className='col_2 flex bg-stone-500 justify-left text-left items-center w-96 h-96'>
-    <div className='justify-center ml-8'>
-      <FaLock />
-      <p className="text-3xl text-white">Email</p>
-      <p className="text-3xl text-white">Password</p>
-    </div>
-    <button className='text-lg mt-40 border-solid border-2 rounded-lg px-2 border-'>Log In</button>
-  </div> */}
-  <div className="relative">
-    <div className="absolute left-10 -right-72 -top-28 -bottom-28 inset-10 bg-gradient-to-b from-green-500 to-blue-900  rounded-e-full blur-3xl"></div>
-    <div className='relative col_2 flex bg-stone-500 justify-center text-center items-center w-96 h-96 '>
+
+  <div className="o-form relative">
+    {/* <div className="backg absolute left-52 -right-80 -top-28 -bottom-10 inset-10 bg-gradient-to-b  from-[#439E03] to-[#046BE1] rounded-b-lg blur-3xl"></div> */}
+    <div className='backg1'></div>
+    <div className='backg2'></div>
+    <div className='form1 relative col_2 flex justify-center text-center items-center '>  
 
 
-      <div className='form relative'>
+      <div className='form relative'> 
         <form action="">
           <div className='flex justify-center text-center items-center'>
-            <FaLock />
+            <FaLock className='padlock' />
           </div>
-          <div className="input-container p-2">
-            <input type="text" name='uname' required placeholder='Email' />
+          <div className="input-container pb-3">
+            <input className="container" type="text" name='uname' required placeholder='Email' />
           </div>
-          <div className="input-container p-2">
-            <input type="password" name='uname' required placeholder='Password' />
+          <div className="input-container pb-5">
+            <input className="container" type="password" name='password' required placeholder='Password' />
           </div>
-          <div><button className='text-lg border-solid border-2 rounded-lg px-2 border-'>Log In</button></div>
-        </form>
+          <div className='flex flex-col'>
+          <button className='text-lg mb-3 text-white font-medium rounded-sm p-2.5 px-2.5 bg-blue-700'>Log In</button>
 
+<button className='but2 text-base text-white font-medium rounded-sm'>Create Account</button>
+
+
+
+
+          </div>
+        </form>
       </div>
     </div>
   </div>
