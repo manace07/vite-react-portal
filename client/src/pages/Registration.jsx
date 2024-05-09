@@ -1,13 +1,8 @@
 import React from 'react';
 import { FaLock } from "react-icons/fa6";
-<<<<<<< HEAD
-// import { Link } from 'react-router-dom';
-import Register from './Register';
-=======
 import { Link } from 'react-router-dom';
->>>>>>> maxiarbn/main
 
-const Login = () => {
+const Registration = () => {
 return (
 <div className="all flex justify-center w-screen h-screen  bg-stone-900">
   <div className='mb-10 col_1 flex flex-col justify-center items-center text-center text-3xl text-white'>
@@ -31,35 +26,20 @@ return (
             <FaLock className='padlock' />
           </div>
           <div className="input-container pb-3">
-<<<<<<< HEAD
-            <input className="container" type="text" name='uname' required placeholder='Email' />
+            <input id="container" type="text" name='uname' required placeholder='Username' />
           </div>
-          <div className="input-container pb-5">
-            <input className="container" type="password" name='password' required placeholder='Password' />
-          </div>
-          <div className='flex flex-col'>
-          <button className='text-lg mb-3 text-white font-medium rounded-sm p-2.5 px-2.5 bg-blue-700'>Log In</button>
-
-<button className='but2 text-base text-white font-medium rounded-sm'>Create Account</button>
-
-
-
-
-          </div>
-=======
+          <div className="input-container pb-3">
             <input id="container" type="text" name='uname' required placeholder='Email' />
           </div>
           <div className="input-container pb-5">
             <input id="container" type="password" name='password' required placeholder='Password' />
           </div>
           <div className='flex flex-col'>
-          <button className='text-lg mb-3 text-white font-medium rounded-sm p-2.5 px-2.5 bg-blue-700'type='submit'>Log In</button>
-        
+          <button className='text-lg mb-3 text-white font-medium rounded-sm p-2.5 px-2.5 bg-blue-700'>Register</button>
           <div>
-            <Link to="/Registration" className='but2 text-base text-white font-medium rounded-sm'>Create Account</Link>
+            <Link to="/" className='but2 text-base text-white font-medium rounded-sm'>Back to Login</Link>
            </div>
           </div>
->>>>>>> maxiarbn/main
         </form>
       </div>
     </div>
@@ -69,4 +49,4 @@ return (
 )
 }
 
-export default Login
+export default Registration
